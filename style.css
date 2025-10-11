@@ -8,7 +8,7 @@ body {
   /* background-color: #f5f5f5; */
 }
 
-/* Navbar */
+ /* ====================== Home Section ======================== */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -42,7 +42,6 @@ body {
   color: #fbfaf9;
 }
 
-/* Hamburger */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -55,7 +54,7 @@ body {
   height: 3px;
   background-color: #fff;
 }
-/* Content */
+
 .hero {
   height: 100vh;
   display: flex;
@@ -83,7 +82,7 @@ body {
   margin: 0 auto;
 }
 /* =============  About Section ============== */
-/* Grid container */
+
 .about-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -95,7 +94,6 @@ body {
   box-sizing: border-box;
 }
 
-/* Image section */
 .about-image img {
   width: 100%;
   max-width: 350px;
@@ -105,7 +103,6 @@ body {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Text section */
 .about-content h2 {
   font-size: 2.5rem;
   margin-bottom: 20px;
@@ -161,7 +158,6 @@ a {
   box-sizing: border-box;
 }
 
-/* ======= Title ======= */
 .Education-title h1 {
   font-size: 2.5rem;
   color: #1a1a1a;
@@ -182,7 +178,6 @@ a {
   border-radius: 2px;
 }
 
-/* ======= Cards Container ======= */
 .Education-cards {
   display: flex;
   justify-content: center;
@@ -193,7 +188,6 @@ a {
   width: 100%;
 }
 
-/* ======= Individual Card ======= */
 .card {
   background-color: #ffffff;
   width: 30%;
@@ -210,13 +204,11 @@ a {
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* ======= Card Image ======= */
 .card img {
   width: 100%;
   height: 200px;
 }
 
-/* ======= Card Content ======= */
 .card-content {
   padding: 20px;
 }
@@ -234,27 +226,7 @@ a {
   line-height: 1.6;
 }
 
-/* ======= Media Queries ======= */
-
-/* For tablets (768px and below) */
-@media (max-width: 992px) {
-  .Education {
-    padding: 40px 15px;
-  }
-
-  .Education-title h1 {
-    font-size: 2rem;
-  }
-
-  .Education-cards {
-    gap: 20px;
-  }
-
-  .card {
-    width: 45%;
-  }
-}
-/* Container styling */
+/* ============== Skills Section ================ */
 .skills-container {
   width: 80%;
   display: flex;
@@ -264,7 +236,6 @@ a {
   gap: 20px;
 }
 
-/* Title styling */
 .skill-title h1 {
   margin-top: 40px;
   font-size: 2.5rem;
@@ -280,7 +251,7 @@ a {
   margin: 10px auto 0;
   border-radius: 2px;
 }
-/* Skill cards styling */
+
 .skill-card {
   background-color: #ffffff;
   border-radius: 15px;
@@ -295,7 +266,6 @@ a {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* Skill images */
 .skill-card img {
   width: 100px;
   height: 100px;
@@ -304,7 +274,6 @@ a {
   margin-bottom: 15px;
 }
 
-/* Skill headings and paragraphs */
 .skill-card h3 {
   margin-bottom: 10px;
   color: #222;
@@ -318,36 +287,7 @@ a {
   text-align: justify;
 }
 
-/* 📱 Media Queries */
-
-/* Medium screens - tablets/laptops */
-@media (max-width: 992px) {
-  .skills-container {
-    width: 90%;
-    grid-template-columns: 1fr 1fr;
-    gap: 25px;
-  }
-}
-
-/* Small screens - phones */
-@media (max-width: 600px) {
-  .skills-container {
-    width: 95%;
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  .skill-card img {
-    width: 80px;
-    height: 80px;
-  }
-
-  .skill-title h1 {
-    font-size: 2rem;
-    margin-bottom: 30px;
-  }
-}
-
+/* ============== Projects Section =============== */
 .projects-container {
   width: 100%;
   min-height: 100vh;
@@ -367,7 +307,7 @@ a {
   align-items: stretch;
   gap: 30px;
 }
-/* ======= Section Title ======= */
+
 .Projects-title h1 {
   font-size: 2.5rem;
   color: #1a1a1a;
@@ -418,13 +358,11 @@ a {
   box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
 }
 
-/* ======= Project Image ======= */
 .project-card img {
   width: 100%;
   height: 220px;
 }
 
-/* ======= Project Content ======= */
 .project-content {
   padding: 20px;
 }
@@ -443,7 +381,6 @@ a {
   margin-bottom: 20px;
 }
 
-/* ======= Button ======= */
 .btn {
   display: inline-block;
   margin-bottom: 20px;
@@ -462,9 +399,7 @@ a {
   transform: scale(1.05);
 }
 
-
-
-/* Mobile view */
+/* ============== Media Queries ============= */
 @media (max-width: 768px) {
   .nav-links {
     position: absolute;
@@ -526,6 +461,24 @@ a {
     padding: 14px;
   }
 }
+/* For tablets (768px and below) */
+@media (max-width: 992px) {
+  .Education {
+    padding: 40px 15px;
+  }
+
+  .Education-title h1 {
+    font-size: 2rem;
+  }
+
+  .Education-cards {
+    gap: 20px;
+  }
+
+  .card {
+    width: 45%;
+  }
+}
 
 @media (max-width: 1000px) {
   .card {
@@ -551,6 +504,32 @@ a {
     align-items: center;
     flex-wrap: wrap;
     gap: 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  .skills-container {
+    width: 95%;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .skill-card img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .skill-title h1 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 992px) {
+  .skills-container {
+    width: 90%;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
   }
 }
 
